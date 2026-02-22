@@ -16,7 +16,8 @@ This flow allows verified users to issue a virtual Mastercard for international 
     *   `getDynamicCvv`: Retrieves a time-limited dynamic CVV, decrypted client-side using a key derived from the `cipherManager`.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+> [!IMPORTANT]
+> Due to the sensitive nature of the information contained in the video proof for this flow, access must be requested individually.
 
 ## Interaction Sequence Diagram
 ```mermaid

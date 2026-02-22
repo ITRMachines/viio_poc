@@ -15,7 +15,8 @@ This flow manages the identity verification process required for users to access
 5.  **Backend Processing**: The `viio-project-KYC` service receives results from the verification provider (via webhooks or direct polling) and updates the user's compliance status.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+> [!IMPORTANT]
+> Due to the sensitive nature of the information contained in the video proof for this flow, access must be requested individually.
 
 ## Interaction Sequence Diagram
 ```mermaid

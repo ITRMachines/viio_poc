@@ -16,7 +16,7 @@ This flow manages the user's entry into the Viio application, covering phone ver
     *   If biometric configuration is in progress, the user is prompted to complete it.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+[**Onboarding Video Proof**](https://drive.google.com/drive/folders/1lQ2fNsq6vCTNHcvBGtSB4VLd3-HthPUW?usp=drive_link)
 
 ## Interaction Sequence Diagram
 ```mermaid

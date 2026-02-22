@@ -4,7 +4,7 @@ This repository contains the technical architectural documentation and interacti
 
 ## 🚀 Proof of Operation (Videos)
 Detailed walkthroughs and video materials showing each flow in action can be found at the following link:
-[**Viio Proof of Operation - Video Materials**](https://link.viio.me/video-proof-operation)
+[**Viio Proof of Operation - Video Materials (Google Drive)**](https://drive.google.com/drive/folders/1BHgoAO1VKHe4niV59LG8ieQulRZugbue?usp=drive_link)
 
 ---
 

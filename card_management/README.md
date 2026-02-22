@@ -17,7 +17,8 @@ This flow provides users with granular control over their Viio cards, allowing t
     *   The system can place a card in a `BLOCKED_RESET_PIN` status if anomalous activity is detected, forcing the user through the Reset PIN flow to restore card functionality.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+> [!IMPORTANT]
+> Due to the sensitive nature of the information contained in the video proof for this flow, access must be requested individually.
 
 ## Interaction Sequence Diagram
 ```mermaid

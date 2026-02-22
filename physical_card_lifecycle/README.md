@@ -18,7 +18,8 @@ This flow encompasses the tracking of a physical card shipment and the subsequen
     *   The client interacts with `viio-project-domina` (or equivalent logistics microservice) to manage the physical assignment and shipping details of the card.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+> [!IMPORTANT]
+> Due to the sensitive nature of the information contained in the video proof for this flow, access must be requested individually.
 
 ## Interaction Sequence Diagram
 ```mermaid
