@@ -18,7 +18,8 @@ This flow allows users to fund their Viio wallet by making a manual transfer fro
     *   Once verified, the transaction status is updated to `COMPLETED`, and the user's balance is synchronized via `viio-project-balance-synchronization`.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+> [!IMPORTANT]
+> Due to the sensitive nature of the information contained in the video proof for this flow, access must be requested individually.
 
 ## Interaction Sequence Diagram
 ```mermaid

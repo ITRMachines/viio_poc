@@ -17,7 +17,7 @@ This flow enables instant, zero-fee transfers between Viio users. It leverages t
     *   The `viio-project-balance-synchronization` service ensures that funds are deducted from the sender and credited to the receiver simultaneously, maintaining ledger integrity.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+[**Internal Transfer Video Proof**](https://drive.google.com/drive/folders/1AcpYJbjkt53Oi6eu_9XQ7Fop8o373EpJ?usp=drive_link)
 
 ## Interaction Sequence Diagram
 ```mermaid
@@ -25,7 +25,7 @@ sequenceDiagram
     participant User
     participant Client as viio-project-client
     participant TransSvc as viio-project-transactions
-    participant AuthSvc as viio-project-authorization
+    participant AuthSvc as viio-project-compliance-core
     participant SyncSvc as viio-project-balance-synchronization
 
     User->>Client: Enter Recipient & Amount

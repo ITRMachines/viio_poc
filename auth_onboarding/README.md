@@ -17,6 +17,7 @@ This flow manages the user's entry into the Viio application, covering phone ver
 
 ## User Experience Showcase
 [**Onboarding Video Proof**](https://drive.google.com/drive/folders/1lQ2fNsq6vCTNHcvBGtSB4VLd3-HthPUW?usp=drive_link)
+[**Dashboard Video Proof**](https://drive.google.com/drive/folders/1Ozhrlph8tTBHdBbZqcaaKag39hKuU78_?usp=drive_link)
 
 ## Interaction Sequence Diagram
 ```mermaid

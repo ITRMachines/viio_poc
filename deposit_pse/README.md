@@ -8,7 +8,7 @@ This flow allows users to fund their Viio wallet using the Colombian PSE (Pagos 
     *   The user specifies the amount in COP (or other supported fiat) they wish to deposit.
     *   The `ratesManager` provides a "Guaranteed Rate" with a 15-minute validity window. If the time expires, the user must refresh the rate.
 2.  **Payment Method Selection**:
-    *   The user selects PSE. The client fetches the latest list of participating financial institutions via `Coltepay/Paymentez` integration.
+    *   The user selects PSE. The client fetches the latest list of participating financial institutions via `Coltepay` integration.
 3.  **Transaction Initiation**:
     *   The user provides their ID type, number, and selects their bank.
     *   A transaction is created in `viio-project-transactions` with a `PENDING` status.
@@ -19,7 +19,7 @@ This flow allows users to fund their Viio wallet using the Colombian PSE (Pagos 
     *   The system uses webhooks and polling to verify the transaction status. Once completed, the user's balance is updated via the `balance-synchronization` service.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+[**Deposit PSE Video Proof**](https://drive.google.com/drive/folders/1X9HX9V77TNJCptZpRV5KF_e6kl-2hcsQ?usp=drive_link)
 
 ## Interaction Sequence Diagram
 ```mermaid

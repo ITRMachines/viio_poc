@@ -6,7 +6,7 @@ This flow manages the identity verification process required for users to access
 ## Flow Details
 1.  **Status Sync**: Upon entering the flow, the `KycManager` synchronizes the current KYC status with the backend service (`viio-project-KYC`).
 2.  **Verification Check**: If the system permits verification (e.g., status is `UNKNOWN` or `REJECTED` with remaining attempts), the verification process is initiated.
-3.  **SDK Integration**: The client integrates with a 3rd party verification provider (Sumsub/Metamap). The `useVerification` hook handles the SDK lifecycle:
+3.  **SDK Integration**: The client integrates with a 3rd party verification provider (Sumsub). The `useVerification` hook handles the SDK lifecycle:
     *   **Initialization**: Configures the SDK with user-specific tokens.
     *   **Launch**: Opens the verification widget (modal) where the user provides documents and biometrics.
 4.  **Completion/Exit**: Once the user completes the flow or exits the widget, the client updates the status via `KycService`:
@@ -24,7 +24,7 @@ sequenceDiagram
     participant User
     participant Client as viio-project-client
     participant KycSvc as viio-project-KYC
-    participant SDK as Sumsub/Metamap SDK
+    participant SDK as Sumsub SDK
     participant UserSvc as viio-project-usercredentials
 
     Client->>KycSvc: Sync Status (GET /metadata)

@@ -1,7 +1,7 @@
 # Virtual Card Creation Flow
 
 ## Scope
-This flow allows verified users to issue a virtual Mastercard for international online payments. It includes identity registration with the card processor, account creation, and card issuance.
+This flow allows verified users to issue a virtual VISA card for international online payments. It includes identity registration with the card processor, account creation, and card issuance.
 
 ## Flow Details
 1.  **Eligibility Check**: Before starting, the `CardManager` verifies the user's KYC status and checks for existing virtual card products to prevent duplicate issuance.
@@ -25,12 +25,11 @@ sequenceDiagram
     participant User
     participant Client as viio-project-client
     participant CardSvc as viio-project-card
-    participant CompSvc as viio-project-card-compliance
-    participant AuthSvc as viio-project-authorization
+
 
     User->>Client: Start Virtual Card Creation
-    Client->>CompSvc: Check Compliance (GET /eligibility)
-    CompSvc-->>Client: Eligible
+    Client->>CardSvc: Check Compliance (GET /eligibility)
+    CardSvc-->>Client: Eligible
 
     User->>Client: Set PIN
     Client->>CardSvc: Create Person (POST /person)
@@ -42,7 +41,7 @@ sequenceDiagram
 
     alt View Card Details
         User->>Client: Request Card Info
-        Client->>AuthSvc: Get Decryption Key
+        Client->>CardSvc: Get Decryption Key
         Client->>CardSvc: Get Sensitive Data (POST /sensitive-data)
         CardSvc-->>Client: Encrypted PAN/Exp
         Client->>CardSvc: Get Dynamic CVV (POST /cvv)

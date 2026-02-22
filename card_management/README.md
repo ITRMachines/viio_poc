@@ -26,7 +26,7 @@ sequenceDiagram
     participant User
     participant Client as viio-project-client
     participant CardSvc as viio-project-card
-    participant AuthSvc as viio-project-authorization
+    participant AuthSvc as viio-project-compliance-core
 
     alt Adjust Limits
         User->>Client: Select New Limit

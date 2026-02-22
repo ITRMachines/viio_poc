@@ -8,7 +8,7 @@ This flow allows users to exit funds from their Viio wallet to external financia
     *   The user specifies the amount to withdraw and the target currency (e.g., COP for Colombian bank accounts).
     *   Similar to the deposit flow, a "Guaranteed Rate" is provided by the `ratesManager`. This rate is locked for a short period to protect the user from market volatility.
 2.  **External Account Configuration**:
-    *   The user selects their bank from a list provided by the payment processor (Paymentez) and enters their account details (Account Type, Number, ID).
+    *   The user selects their bank from a list provided by the payment processor (Coltepay bank list) and enters their account details (Account Type, Number, ID).
     *   The `WithdrawalCurrencyForm` captures and validates these details before proceeding.
 3.  **Security Challenge (OTP)**:
     *   All withdrawals require explicit authorization. The user receives a 6-digit OTP via their chosen channel (WhatsApp or Email).
@@ -18,7 +18,7 @@ This flow allows users to exit funds from their Viio wallet to external financia
     *   The backend service coordinates with external banking gateways to initiate the transfer. The transaction status transitions from `PENDING` to `COMPLETED` once the funds are processed by the external bank.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+[**Withdrawal Video Proof**](https://drive.google.com/drive/folders/1bYelBeT3yAa2AYzbJfg0yTyi58MyFb5w?usp=drive_link)
 
 ## Interaction Sequence Diagram
 ```mermaid
@@ -27,7 +27,7 @@ sequenceDiagram
     participant Client as viio-project-client
     participant TransSvc as viio-project-transactions
     participant RateSvc as viio-project-rates
-    participant AuthSvc as viio-project-authorization
+    participant AuthSvc as viio-project-compliance-core
     participant BankSvc as External Bank/Processor
 
     User->>Client: Enter Withdrawal Amount

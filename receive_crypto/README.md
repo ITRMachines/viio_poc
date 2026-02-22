@@ -1,7 +1,7 @@
 # Receive (Crypto Deposit) Flow
 
 ## Scope
-This flow allows users to receive USDC or other crypto assets from external wallets. It provides the user with their unique blockchain address and QR code, and monitors the network for incoming transfers.
+This flow allows users to receive USDC, USDT or other crypto assets from external wallets. It provides the user with their unique blockchain address and QR code.
 
 ## Flow Details
 1.  **Wallet Allocation**:
@@ -14,10 +14,10 @@ This flow allows users to receive USDC or other crypto assets from external wall
     *   The user performs the transfer from an external wallet.
     *   Backend listeners (`viio-project-database-listener` or direct Fireblocks webhooks) monitor the blockchain for incoming transactions to the user's address.
 4.  **Asynchronous Settlement**:
-    *   When an incoming transfer is detected and reaches the required number of confirmations, the `viio-project-realtime-db-sync` and `balance-synchronization` services update the user's balance in real-time. The user is typically notified via push notification.
+    *   When an incoming transfer is detected and reaches the required number of confirmations, the `viio-compliance-core` services update the user's balance in real-time. The user is typically notified via push notification.
 
 ## User Experience Showcase
-[Video Link Placeholder]
+[**Receive Crypto Video Proof**](https://drive.google.com/drive/folders/1B-50xBBJ3gURuQwYmjB-2rGu9HBLNIf-?usp=drive_link)
 
 ## Interaction Sequence Diagram
 ```mermaid
@@ -27,7 +27,7 @@ sequenceDiagram
     participant Client as viio-project-client
     participant UserSvc as viio-project-usercredentials
     participant Fireblocks as viio-project-fireblocks
-    participant SyncSvc as viio-project-realtime-db-sync
+    participant SyncSvc as viio-project-compliance-core
 
     Client->>UserSvc: Get Deposit Address (GET /wallet-address)
     UserSvc->>Fireblocks: Fetch/Assign Vault Address

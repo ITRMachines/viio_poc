@@ -28,7 +28,7 @@ The repository is organized by feature area, each containing a dedicated `README
 
 ### 4. Digital Asset Operations
 *   [**Internal Transfer (P2P)**](./internal_transfer/README.md): Instant transfers between Viio users (zero-fee).
-*   [**External Transfer (Withdrawal)**](./external_transfer/README.md): Sending USDC/Crypto to external blockchain wallets.
+*   [**External Transfer (Withdrawal)**](./external_transfer/README.md): Sending USDC or USDT/Crypto to external blockchain wallets.
 *   [**Receive (Crypto Deposit)**](./receive_crypto/README.md): Wallet address generation and monitoring for incoming on-chain funds.
 
 ---
@@ -36,7 +36,7 @@ The repository is organized by feature area, each containing a dedicated `README
 ## 🛠 Tech Stack Overview
 - **Frontend**: Ionic React, Capacitor, RxJS.
 - **Backend Architecture**: Node.js/Python Microservices.
-- **Infrastructure**: Fireblocks (Crypto), Coltepay/Paymentez (Fiat), Sumsub/Metamap (KYC).
+- **Provider Infrastructure**: Fireblocks (Crypto), Coltepay (Fiat), Sumsub (KYC).
 
 ---
 © 2026 Viio. Technical architecture documented for audit and development purposes.
